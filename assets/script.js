@@ -19,10 +19,11 @@ $(document).ready(function () {
     //This function is run immediately to check for locally stored data and populate our calEvents array. Still trying to wrap my head around why it works..
     getLocal()
     function getLocal() {
+        //Parse the local storage data for my specific 'Events' key and assign it a variable of stored
         var stored = JSON.parse(localStorage.getItem('Events'))
-        calEvents = stored
-        // console.log(saved)
-        console.log(calEvents)
+        //if stored is null (doesn't exist) function ends and doesn't update calEvents array with the correct data.
+        if (stored !== null)
+            calEvents = stored
     }
 
     // THIS save FUNCTION IS WORKING AND SAVES VALUES ADDED TO THE INPUT BOX TO THE LOCAL STORAGE
@@ -54,8 +55,8 @@ $(document).ready(function () {
             //create row
             var newRow = $('<div>');
             //apply classes
-            newRow.attr('id', 'hour' + workDay[i].hour);
-            newRow.attr('value', workDay[i].hour);
+            // newRow.attr('id', 'hour' + workDay[i].hour); // Don't actually need this
+            // newRow.attr('value', workDay[i].hour); // Don't actually need this
             newRow.addClass('row time-block');
             //create pblock
             var pblock = $('<div>');
