@@ -3,8 +3,8 @@
 https://ejlopez44.github.io/calendarAppHw/
 
 Homework for Code Class to create a smart calendar application
-
 Features:
+
 v5
 - Created function to store each textarea value to blank array
 
@@ -14,7 +14,7 @@ v4
 
 v3
 - Created Loop to automatically clone the original hour block for an 8 hour work day
-- - This could be taken out if unnecessary and hardcoded into the html doc
+  - This could be taken out if unnecessary and hardcoded into the html doc
 
 v2
 - Utilized Moment JS to display Day/Month/Date to the header
