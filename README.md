@@ -3,7 +3,27 @@
 https://ejlopez44.github.io/calendarAppHw/
 
 Homework for Code Class to create a smart calendar application
+
 Features:
+v5
+- Created function to store each textarea value to blank array
+
+v4
+- Created function that looks at data-set value of each textarea and checks if hour is equal, less or greater
+- textarea background color is changed based on function
+
+v3
+- Created Loop to automatically clone the original hour block for an 8 hour work day
+- - This could be taken out if unnecessary and hardcoded into the html doc
+
+v2
+- Utilized Moment JS to display Day/Month/Date to the header
+
+v1
+- Created initial div row and columns to model individual hour rows
+- Linked to external js file
+
+Visual representation of features:
 
 The Date is displayed in the header
 ![Header Image](https://github.com/ejlopez44/calendarAppHw/blob/master/assets/screencaps/view01.png?raw=true)
@@ -19,21 +39,3 @@ Here the local storage record can be found
 
 The textarea background color will change based on the current hour. Future work day hours will show in green, past in grey and current hour in red.
 ![Color Change](https://github.com/ejlopez44/calendarAppHw/blob/master/assets/screencaps/view02.png?raw=true)
-
-v5
-Created function to store each textarea value to blank array
-
-v4
-Created function that looks at data-set value of each textarea and checks if hour is equal, less or greater
-textarea background color is changed based on function
-
-v3
-Created Loop to automatically clone the original hour block for an 8 hour work day
-- This could be taken out if unnecessary and hardcoded into the html doc
-
-v2
-Utilized Moment JS to display Day/Month/Date to the header
-
-v1
-Created initial div row and columns to model individual hour rows
-Linked to external js file
